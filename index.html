@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first-form</title>
+</head>
+
+<body>
+  <main style="margin: 0 auto; max-width: 500px; width: 100%; margin-top: 100px;">
+
+    <form action="/index.html">
+      <fieldset>
+        <legend><strong>Registration form</strong></legend>
+        <h4>Who are you?</h4>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Input your email" required>
+        <br>
+        <br>
+        <label for="user-psw">Password:</label>
+        <input type="password" name="user-psw" id="user-psw" min="5" placeholder="Minimum 5 characters">
+        <br>
+        <br>
+        <label for="first-name">First Name:</label>
+        <input type="text" name="text" id="first-name" placeholder="Input your first Name" required>
+        <br>
+        <br>
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="text" id="last-name" placeholder="Input your last Name" required>
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="0" placeholder="What`s your age?">
+        <br>
+        <br>
+        <h4>Where are you from?</h4>
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+          <option value="ua">Ukraine</option>
+          <option value="pl">Poland</option>
+          <option value="fr">France</option>
+          <option value="ro">Romania</option>
+          <option value="i">Italy</option>
+        </select>
+        <br>
+        <br>
+        <h4>What`s your gender? </h4>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <br>
+        <br>
+        <h4>When were you born?</h4>
+        <label for="birthday">Birhday:</label>
+        <input type="date" name="birthday" id="birthday" required>
+        <br>
+        <br>
+        <label for="private_policy">Do you agree with our privacy policy?</label>
+        <input type="checkbox" name="private_policy" id="private_policy" value="private_policy" required>
+        <br>
+        <br>
+        <button style="color: gray;">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+
+</html>
